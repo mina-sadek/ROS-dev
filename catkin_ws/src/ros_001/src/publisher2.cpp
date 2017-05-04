@@ -11,12 +11,12 @@
 
 int main(int argc, char **argv) {
 	//Initializes ROS, and sets up a node
-	ros::init(argc, argv, "talker");
+	ros::init(argc, argv, "random_husky_commands");
 	ros::NodeHandle nh;
 
 	//Ceates the publisher, and tells it to publish
 	//to the robot/cmd_vel topic, with a queue size of 100
-	ros::Publisher pub=nh.advertise<geometry_msgs::Twist>("robot/cmd_vel", 100);
+	ros::Publisher pub=nh.advertise<geometry_msgs::Twist>("diff_robot/cmd_vel", 100);
 
 	//Sets up the random number generator
 	srand(time(0));
