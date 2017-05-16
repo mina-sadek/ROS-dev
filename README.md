@@ -1,5 +1,6 @@
 # ROS-dev
 Developing using ROS with gazebo simulation
+This branch will include packages that run and control a robot in simulation under gazebo
 
 catkin_ws_crt.sh :
 A bash file that creates and configures catkin_ws for you.
