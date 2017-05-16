@@ -1,5 +1,6 @@
 # ROS-dev
 Developing using ROS with gazebo simulation
+This branch will have nodes that run on a raspberry pi to control a real-time robot
 
 catkin_ws_crt.sh :
 A bash file that creates and configures catkin_ws for you.
