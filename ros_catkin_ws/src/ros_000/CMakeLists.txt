@@ -131,33 +131,27 @@ include_directories(
 
 ## Declare a C++ executable
 # add_executable(ros_000_node src/ros_000_node.cpp)
-add_executable(publisher_1 src/publisher.cpp)
-add_executable(subscriber_1 src/subscriber.cpp)
 add_executable(diffBot src/diffBot.cpp)
-add_executable(diffBot_odom src/diffBot_odom.cpp)
 add_executable(diffBot_rwheel src/diffBot_rwheel.cpp)
 add_executable(diffBot_lwheel src/diffBot_lwheel.cpp)
 
+# add_executable(publisher src/publisher.cpp)
+# add_executable(subscriber src/subscriber.cpp)
+# add_executable(publisher_blink src/publisher_blink.cpp)
 
 ## Add cmake target dependencies of the executable
 ## same as for the library above
 # add_dependencies(ros_000_node ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
-#add_dependencies(publisher ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_EX$
-
-
+# add_dependencies(publisher ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_EX$
 
 ## Specify libraries to link a library or executable target against
-target_link_libraries(publisher_1 ${catkin_LIBRARIES} wiringPi)
-
-target_link_libraries(subscriber_1 ${catkin_LIBRARIES} wiringPi)
-
 target_link_libraries(diffBot ${catkin_LIBRARIES} wiringPi)
-
-target_link_libraries(diffBot_odom ${catkin_LIBRARIES} wiringPi)
-
 target_link_libraries(diffBot_rwheel ${catkin_LIBRARIES} wiringPi)
-
 target_link_libraries(diffBot_lwheel ${catkin_LIBRARIES} wiringPi)
+
+# target_link_libraries(publisher ${catkin_LIBRARIES})
+# target_link_libraries(subscriber ${catkin_LIBRARIES})
+# target_link_libraries(publisher_blink ${catkin_LIBRARIES} wiringPi)
 
 #############
 ## Install ##
